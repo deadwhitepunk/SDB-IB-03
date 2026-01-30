@@ -36,6 +36,7 @@
 По желанию можете поэкспериментировать с опциями: https://nmap.org/man/ru/man-briefoptions.html.
 
 В результате все nmap сканирования были обнаружены. В зависимости от вида сканирования surricata выдавала разный результат. В сканировании sS например, surricata алертила на конретные порты приложений. 
+
 *В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.*
 
 ------
@@ -67,9 +68,10 @@
 ![attack](https://github.com/deadwhitepunk/sdb-ib-03/blob/main/img/image_hydra_attack.png)
 
 
-![Логи fail2ban](https://github.com/deadwhitepunk/sdb-ib-03/blob/main/img/image_fail2ban_log.png)
+![Логи fail2ban](https://github.com/deadwhitepunk/sdb-ib-03/blob/main/img/image_fail2ban_log_ban.png)
 ![Логи Suricata](https://github.com/deadwhitepunk/sdb-ib-03/blob/main/img/image_hydra_surricata_log.png)
 
 После того, как мы начали атаку наш ip попал в ban. Так как начались активные попытки перебора паролей на сервис ssh, что и видно в логах, несколько раз он дал пербрать пароль, а потом этот ip был забанен.
 Surricata также определила ssh scan
+
 *В качестве ответа пришлите события, которые попали в логи Suricata и Fail2Ban, прокомментируйте результат.*
